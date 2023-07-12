@@ -38,6 +38,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser())
 app.use(successFn)
 
+//  routes
+app.use("/api/v1/behavior", require("./routes/behavior"))
+
 app.use(errorHandler)
 app.use('/public', express.static('../backend/public/'));
 

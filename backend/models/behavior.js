@@ -1,7 +1,7 @@
 var mongoose = require('mongoose')
 
 const BehaviorSchema = new mongoose.Schema({
-    behavior: {
+    name: {
         type: String,
         required: true,
     },
