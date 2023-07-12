@@ -1,6 +1,6 @@
 export default [
     {
-        id:1,
+        id:0,
         question : 'Do you enjoy working with your hands?',
         options : [
             'tiim',
@@ -8,7 +8,7 @@ export default [
         ]
     },
     {
-        id:2,
+        id:1,
         question : 'Are you interested in practical problem-solving?',
         options : [
             'tiim',
@@ -16,7 +16,7 @@ export default [
         ]
     },
     {
-        id:3,
+        id:2,
         question : 'Would you prefer a job that involves physical activity?',
         options : [
             'tiim',
@@ -24,7 +24,7 @@ export default [
         ]
     },
     {
-        id:4,
+        id:3,
         question : 'Do you enjoy analyzing data and information?',
         options : [
             'tiim',
@@ -32,7 +32,7 @@ export default [
         ]
     },
     {
-        id:5,
+        id:4,
         question : 'Are you curious about how things work?',
         options : [
             'tiim',
@@ -40,7 +40,7 @@ export default [
         ]
     },
     {
-        id:6,
+        id:5,
         question : 'Do you enjoy conducting research or experiments?',
         options : [
             'tiim',
@@ -48,7 +48,7 @@ export default [
         ]
     },
     {
-        id:7,
+        id:6,
         question : 'Do you enjoy expressing yourself through creative activities?',
         options : [
             'tiim',
@@ -56,7 +56,7 @@ export default [
         ]
     },
     {
-        id:8,
+        id:7,
         question : 'Do you have an interest in visual arts, music, or writing?',
         options : [
             'tiim',
@@ -64,7 +64,7 @@ export default [
         ]
     },
     {
-        id:9,
+        id:8,
         question : 'Are you attracted to jobs that involve imagination and originality?',
         options : [
             'tiim',
@@ -72,7 +72,7 @@ export default [
         ]
     },
     {
-        id:10,
+        id:9,
         question : 'Do you enjoy helping and working with people?',
         options : [
             'tiim',
@@ -80,7 +80,7 @@ export default [
         ]
     },
     {
-        id:11,
+        id:10,
         question : 'Do you prefer jobs that involve teamwork and collaboration?',
         options : [
             'tiim',
@@ -88,7 +88,7 @@ export default [
         ]
     },
     {
-        id:12,
+        id:11,
         question : 'Are you interested in making a positive impact on others lives?',
         options : [
             'tiim',
@@ -96,7 +96,7 @@ export default [
         ]
     },
     {
-        id:13,
+        id:12,
         question : 'Are you comfortable taking risks and making decisions?',
         options : [
             'tiim',
@@ -104,7 +104,7 @@ export default [
         ]
     },
     {
-        id:14,
+        id:13,
         question : 'Do you enjoy selling products or persuading others?',
         options : [
             'tiim',
@@ -112,7 +112,7 @@ export default [
         ]
     },
     {
-        id:15,
+        id:14,
         question : 'Are you attracted to leadership roles and entrepreneurship?',
         options : [
             'tiim',
@@ -120,7 +120,7 @@ export default [
         ]
     },
     {
-        id:16,
+        id:15,
         question : 'Do you prefer working with structured and organized systems?',
         options : [
             'tiim',
@@ -128,7 +128,7 @@ export default [
         ]
     },
     {
-        id:17,
+        id:16,
         question : 'Are you detail-oriented and precise in your work?',
         options : [
             'tiim',
@@ -136,7 +136,7 @@ export default [
         ]
     },
     {
-        id:18,
+        id:17,
         question : 'Do you enjoy working with numbers, data, or information management?',
         options : [
             'tiim',
