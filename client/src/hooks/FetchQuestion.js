@@ -19,7 +19,7 @@ export const useFetchQuestion = () => {
                     setGetData(prev => ({...prev, isLoading : false }));
                     setGetData(prev => ({...prev, apiData : question }));
 
-                    dispatch(Action.startExamAction)
+                    dispatch(Action.startExamAction(question))
                 } else {
                     throw new Error('odoogoor aldaatai bn')
                 }
