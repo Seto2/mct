@@ -14,10 +14,12 @@ const behaviorApp = require("../apps/behavior")
 const createFile = require("../utils/file/createFile")
 
 
-// create behavior
-
+// get behavior list
 router
-    .route("/create/")
+    .route("/")
+    .get(asyncHandler(behaviorApp.getList))
     .post(asyncHandler(behaviorApp.create))
+    .put(asyncHandler(behaviorApp.update))
+    .delete(asyncHandler(behaviorApp.delete))
 
 module.exports = router

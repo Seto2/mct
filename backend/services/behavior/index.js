@@ -17,3 +17,22 @@ exports.createBehavior = async (behaviorBody) =>
 
     return behavior
 }
+
+/**
+ * Зан төлөвийн мэдээлэл засах
+ * @param {*} id                id
+ * @param {*} behaviorBody      засах мэдээлэл
+ */
+exports.updateBehavior = async (id, behaviorBody) =>
+{
+    console.log(id)
+    console.log(behaviorBody)
+    const updatedBehavior = await Behavior.updateOne(
+        {
+            _id: id
+        },
+        behaviorBody
+    )
+
+    return updatedBehavior
+}
