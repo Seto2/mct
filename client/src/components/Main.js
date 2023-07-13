@@ -1,8 +1,10 @@
 import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
-import '../styles/Main.css'
 import { useDispatch } from 'react-redux'
 import { setUserId } from 'redux/result_reducer'
+
+import '../styles/Main.css'
+
 export default function Main() {
 
     const inputRef = useRef(null)
