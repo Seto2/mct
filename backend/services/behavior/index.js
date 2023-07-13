@@ -25,8 +25,6 @@ exports.createBehavior = async (behaviorBody) =>
  */
 exports.updateBehavior = async (id, behaviorBody) =>
 {
-    console.log(id)
-    console.log(behaviorBody)
     const updatedBehavior = await Behavior.updateOne(
         {
             _id: id

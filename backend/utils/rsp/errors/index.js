@@ -139,5 +139,11 @@ module.exports = {
                     message: 'KYC нь баталгаажсан байна',
                     statusCode: 400
                 },
+    ERR_404:    {
+                    code: 404,
+                    name: "ERROR 404",
+                    message: 'Олдсонгүй',
+                    statusCode: 400
+                },
 
 }

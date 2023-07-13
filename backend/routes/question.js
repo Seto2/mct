@@ -8,7 +8,7 @@ const validate = require("../middleware/validate")
 const asyncHandler = require("../middleware/asyncHandler")
 
 //apps
-const behaviorApp = require("../apps/behavior")
+const questionApp = require("../apps/question")
 
 // validate, file loader
 const createFile = require("../utils/file/createFile")
@@ -17,13 +17,13 @@ const createFile = require("../utils/file/createFile")
 // get behavior list
 router
     .route("/")
-    .get(asyncHandler(behaviorApp.getList))
-    .post(asyncHandler(behaviorApp.create))
-    .put(asyncHandler(behaviorApp.update))
-    .delete(asyncHandler(behaviorApp.delete))
+    .get(asyncHandler(questionApp.getList))
+    .post(asyncHandler(questionApp.create))
+    .put(asyncHandler(questionApp.update))
+    .delete(asyncHandler(questionApp.delete))
 
 router
     .route("/get/")
-    .get(asyncHandler(behaviorApp.getObject))
+    .get(asyncHandler(questionApp.getObject))
 
 module.exports = router

@@ -5,6 +5,18 @@ const behaviorService = require('../../services/behavior')
 
 
 /**
+ * id гаар object баазаас авах
+ */
+exports.getObject = async(req, res) =>
+{
+    const { id } = req.query
+
+    const object = await Behavior.findById(id)
+
+    req.sendData(object)
+}
+
+/**
  * зан төлвийн жагсаалт авах name ээр хайж болно
  */
 exports.getList = async(req, res) =>
@@ -72,10 +84,12 @@ exports.delete = async (req, res) =>
 {
     const { id } = req.query
 
-    console.log(id)
-
     const test = await Behavior.deleteOne({ _id: id })
-    console.log(test)
+
+    if(test.deletedCount==0)
+    {
+        throw new CError('ERR_404')
+    }
 
     req.sendInfo('INF_003')
 }

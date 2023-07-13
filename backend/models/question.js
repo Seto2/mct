@@ -6,17 +6,19 @@ const QuestionSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    options: {
-        answer: {
-            type: String,
-            required: true,
-        },
-        behavior: {
-            type: mongoose.Types.ObjectId,
-            required: true,
-            ref: Behavior,
+    options: [
+        {
+            answer: {
+                type: String,
+                required: true,
+            },
+            behavior: {
+                type: mongoose.Types.ObjectId,
+                required: true,
+                ref: Behavior,
+            }
         }
-    }
+    ]
 }, {
     timestamps: true,
 })
