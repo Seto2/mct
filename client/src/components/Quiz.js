@@ -50,7 +50,7 @@ export default function Quiz() {
         <Questions onChecked={onChecked} />
 
         <div className='grid'>
-            <button className='btn prev' onClick={onPrev}> Өмнөх </button>
+            { trace > 0 ? <button className='btn prev' onClick={onPrev}> Өмнөх </button> :<div></div>}
             <button className='btn next' onClick={onNext}> Дараагийнх </button>
         </div>
     </div>
