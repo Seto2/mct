@@ -1,10 +1,15 @@
 import React, { useEffect } from 'react'
-import '../styles/Result.css'
-import {Link} from 'react-router-dom'
-import ResultTable from './ResultTable'
 import { useDispatch, useSelector } from 'react-redux'
+import {Link} from 'react-router-dom'
+
+import ResultTable from './ResultTable'
+import ResultRadar from './ResultRadar'
+
 import { resetAllAction } from 'redux/question_reducer'
 import { resetResultAction } from 'redux/result_reducer'
+
+import '../styles/Result.css'
+
 import {attempts_Number, earnPoints_Number, flagResult} from 'helper/helper'
 
 export default function Result() {
@@ -69,6 +74,9 @@ export default function Result() {
       </div>
       <div className='container'>
         <ResultTable/>
+      </div>
+      <div className='result flex-center'>
+          <ResultRadar/>
       </div>
     </div>
   )

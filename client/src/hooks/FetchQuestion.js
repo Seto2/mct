@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import data, {answers} from '../database/data'
 
 import * as Action from '../redux/question_reducer'
 
+import data, {answers} from '../database/data'
+
 export const useFetchQuestion = () => {
+
     const dispatch = useDispatch();
     const [getData, setGetData] = useState({ isLoading : false, apiData : [], serverError: null})
 
