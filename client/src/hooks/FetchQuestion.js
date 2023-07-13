@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import data from '../database/data'
+import data, {answers} from '../database/data'
 
 import * as Action from '../redux/question_reducer'
 
@@ -17,9 +17,9 @@ export const useFetchQuestion = () => {
 
                 if(question.length > 0){
                     setGetData(prev => ({...prev, isLoading : false }));
-                    setGetData(prev => ({...prev, apiData : question }));
+                    setGetData(prev => ({...prev, apiData : {question, answers} }));
 
-                    dispatch(Action.startExamAction(question))
+                    dispatch(Action.startExamAction({question, answers}))
                 } else {
                     throw new Error('odoogoor aldaatai bn')
                 }
