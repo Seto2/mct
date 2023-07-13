@@ -22,7 +22,9 @@ export default function Quiz() {
     function onNext(){
         if(trace < queue.length){
             dispatch(MoveNextQuestion());
-            dispatch(PushAnswer(check))
+            if(result.length <= trace){
+                dispatch(PushAnswer(check))
+            }
         }
     }
 
