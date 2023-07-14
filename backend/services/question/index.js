@@ -11,7 +11,6 @@ exports.create = async (req) =>
 {
     const { question, options } = req.body
 
-    // Create a new question instance
     const newQuestion = new Question({
       question,
       options: options.map(option => ({
