@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { setUserId } from 'redux/result_reducer'
 
-import '../styles/Main.css'
 
-export default function Main() {
+export default function Home() {
 
     const inputRef = useRef(null)
     const dispatch = useDispatch()
@@ -21,8 +20,10 @@ export default function Main() {
         <h1 className='title text-light'> Мэргэжил сонголтын туслах </h1>
 
         <ol>
-        <h2 className=' text-light'>Аливаа үйл ажиллагааны амжилт нь чиг хандлага, үнэт зүйлийн баримжаа, сонирхол, тогтсон хандлага, харилцаа, сэдлээс хамаардаг ба эдгээр хүчин зүйлийг харгалзан бие хүний мэргэжилд баримжаалсан 6 хэв шинжийг тодорхойлсон. Уг тестээр 16 нас хүрсэн, суурь боловсрол эзэмшсэн хүн өөрийгөө тодорхойлж болно.</h2>
-        
+        <li>Та нийт 18н асуултанд хариулна.</li>
+        <li>Та нийт 18н асуултанд хариулна.</li>
+        <li>Та нийт 18н асуултанд хариулна.</li>
+        <li>Та нийт 18н асуултанд хариулна.</li>
         </ol>
 
         <form id='form'>
